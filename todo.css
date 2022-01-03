@@ -64,7 +64,7 @@ h1{
     font-size: 30px;
     color: white;
 }
-#save{
+#save img{
     outline: none;
     border: none;
     width: 50px;
@@ -96,6 +96,7 @@ h1{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
     margin-top: 2rem;
 
 }
@@ -130,6 +131,41 @@ h1{
     margin-left: 30px;
     cursor: pointer;
 
+}
+@media(max-width:450px)
+{
+    .item_input{
+        background: #ddf9fc;
+        outline: none;
+        border: 2px solid #f5e2fd;
+        padding: 10px;
+        color: #000;
+        margin-top: 10px;
+        font-size: 15px;
+        width: 230px;
+    
+    
+    }
+    .remove{
+        background: none;
+        outline: none;
+        border: none;
+        color: #ff0123;
+        font-size: 1.5rem;
+        margin-left: 20px;
+        cursor: pointer;
+    
+    }
+    .edit{
+        background: none;
+        outline: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        margin-left: 20px;
+        cursor: pointer;
+    
+    }
 }
 .remove_btn{
     margin-top: 35px;
