@@ -70,7 +70,7 @@ h1{
     width: 50px;
     border-radius: 10px;
     background-color: green;
-    color: black;
+    /* color: black; */
     cursor: pointer;
     transition: .5s;
     margin: 0.25rem;

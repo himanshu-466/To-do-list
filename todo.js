@@ -73,16 +73,16 @@ class lastitem{
     let savebtn = document.getElementById('save');
     let webtask = localStorage.getItem("localtask");
     let taskobj = JSON.parse(webtask);
-    
-    console.log(taskobj[1]);
+    // console.log(savebtn);
     console.log(saveindex.value);
     console.log(taskobj[saveindex.value]=value1.value);
+    if(value1.value!="")
+    {
     taskobj[saveindex.value] = value1.value;
     localStorage.setItem("localtask",JSON.stringify(taskobj));
     savebtn.style.display="none";
     add1.style.display="block";
 
-    // showtask();
     container.innerHTML=""
         taskobj.forEach((element,index) => {
             this.create(element,index)
@@ -90,7 +90,8 @@ class lastitem{
         });
  
     value1.value=""
-
+    
+    }
 }
 
 }
