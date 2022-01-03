@@ -89,7 +89,7 @@ class lastitem{
             
         });
  
-        value1.value=""
+    value1.value=""
 
 }
 
